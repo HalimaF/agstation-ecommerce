@@ -29,7 +29,7 @@ $path = ltrim($path, '/');
 
 // Default to frontend if no path specified
 if (empty($path)) {
-    include 'frontend/index.php';
+    include __DIR__ . '/frontend/index.php';
     exit;
 }
 
@@ -50,7 +50,7 @@ if (strpos($path, 'admin/') === 0) {
 }
 
 // Check if file exists
-if (file_exists($file)) {
+if (file_exists(__DIR__ . '/' . $file)) {
     // Handle different file types
     $ext = pathinfo($file, PATHINFO_EXTENSION);
     
@@ -75,18 +75,18 @@ if (file_exists($file)) {
             header('Content-Type: image/webp');
             break;
         case 'php':
-            include $file;
+            include __DIR__ . '/' . $file;
             exit;
         default:
             break;
     }
     
     if ($ext !== 'php') {
-        readfile($file);
+        readfile(__DIR__ . '/' . $file);
     }
 } else {
     // File not found - redirect to frontend
     header("HTTP/1.0 404 Not Found");
-    include 'frontend/index.php';
+    include __DIR__ . '/frontend/index.php';
 }
 ?>
