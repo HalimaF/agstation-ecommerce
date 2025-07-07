@@ -1,0 +1,40 @@
+# Environment variables
+.env
+
+# Composer
+/vendor/
+composer.lock
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Cache
+cache/
+tmp/
+
+# Uploads (keep directory structure but ignore files)
+uploads/*
+!uploads/.gitkeep
+!uploads/product_images/.gitkeep
+
+# Database
+*.sql.backup
+*.dump
+
+# Node modules (if using any JS build tools)
+node_modules/
+
+# Build artifacts
+build/
+dist/
