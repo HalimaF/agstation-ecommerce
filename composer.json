@@ -3,7 +3,7 @@
     "description": "AG Station - Agricultural Equipment Management System",
     "type": "project",
     "require": {
-        "php": "^8.0",
+        "php": "^8.1",
         "ext-pdo": "*",
         "ext-pdo_mysql": "*"
     },
@@ -12,7 +12,7 @@
     },
     "config": {
         "platform": {
-            "php": "8.0"
+            "php": "8.1"
         }
     }
 }

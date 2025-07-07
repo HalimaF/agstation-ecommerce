@@ -1,0 +1,10 @@
+[build]
+builder = "nixpacks"
+
+[deploy]
+healthcheckPath = "/health"
+healthcheckTimeout = 30
+restartPolicyType = "always"
+
+[env]
+PHP_VERSION = "8.1"
