@@ -1,4 +1,23 @@
 <?php
+// Simple health check endpoint
+if ($_SERVER['REQUEST_URI'] === '/health') {
+    header('Content-Type: application/json');
+    echo json_encode(['status' => 'ok', 'timestamp' => time()]);
+    exit;
+}
+
+// Basic info endpoint
+if ($_SERVER['REQUEST_URI'] === '/info') {
+    header('Content-Type: application/json');
+    echo json_encode([
+        'app' => 'AG Station',
+        'version' => '1.0.0',
+        'php_version' => PHP_VERSION,
+        'environment' => $_ENV['APP_ENV'] ?? 'production'
+    ]);
+    exit;
+}
+
 // Root index.php for Railway deployment
 // This file handles basic routing for the application
 
