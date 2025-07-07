@@ -4,7 +4,7 @@ A comprehensive PHP-based agricultural equipment management system with customer
 
 ## 🚀 Live Demo
 
-🔗 **Deploy your own**: [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/php)
+🔗 **Deploy on Render**: [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com)
 
 ## ✨ Features
 
@@ -18,49 +18,69 @@ A comprehensive PHP-based agricultural equipment management system with customer
 
 ## 🛠️ Tech Stack
 
-- **Backend**: PHP 8.0+, PDO, MySQL
+- **Backend**: PHP 8.1+, PDO, MySQL/PostgreSQL
 - **Frontend**: HTML5, CSS3, JavaScript, Bootstrap
-- **Database**: MySQL 5.7+
-- **Deployment**: Railway, Heroku, or traditional hosting
+- **Database**: MySQL 5.7+ or PostgreSQL 13+
+- **Deployment**: Render, Railway, Heroku, or traditional hosting
 
 ## 🆓 Free Deployment Options
 
-### Option 1: Railway (Recommended)
+### Option 1: Render (Recommended)
 
-Railway offers a generous free tier and is perfect for PHP applications.
+Render offers excellent free tier with PostgreSQL database.
 
-**Quick Deploy:**
+**Quick Deploy Steps:**
 1. Fork this repository
-2. Sign up at [railway.app](https://railway.app)
-3. Click "New Project" → "Deploy from GitHub repo"
-4. Select your forked repository
-5. Add MySQL database service
-6. Set environment variables (see below)
-7. Deploy!
+2. Sign up at [render.com](https://render.com)
+3. Create **PostgreSQL Database**:
+   - Name: `agstation-db`
+   - Plan: **Free**
+4. Create **Web Service**:
+   - Runtime: **Docker**
+   - Connect your forked repository
+   - Auto-deploy: **Yes**
+5. **Set Environment Variables**:
+   - Copy database connection details from PostgreSQL service
+   - Add to web service environment variables
+6. **Import Database Schema**:
+   - Use `database/agstation_schema_postgresql.sql`
+   - Connect via psql or database client
 
-### Option 2: Heroku
+### Option 2: Railway
 
-1. Install Heroku CLI
-2. `heroku create your-app-name`
-3. `heroku addons:create cleardb:ignite`
-4. `git push heroku master`
+1. Sign up at [railway.app](https://railway.app)
+2. Deploy from GitHub repository
+3. Add MySQL database service
+4. Set environment variables
 
-### Option 3: Traditional Free Hosting
+### Option 3: Heroku
 
-- **InfinityFree**: Upload via FTP, import database
-- **000webhost**: File manager upload, phpMyAdmin for database
-- **FreeHosting**: Similar process to above
+1. `heroku create your-app-name`
+2. `heroku addons:create heroku-postgresql:hobby-dev`
+3. `git push heroku master`
 
 ## 🔧 Environment Variables
 
 Set these in your hosting platform:
 
+### For Render (PostgreSQL):
 ```env
-DB_HOST=your-database-host
+DB_HOST=your-postgres-host
+DB_NAME=your-database-name
+DB_USER=your-database-username
+DB_PASSWORD=your-database-password
+DB_PORT=5432
+DB_TYPE=pgsql
+```
+
+### For Railway/Heroku (MySQL):
+```env
+DB_HOST=your-mysql-host
 DB_NAME=your-database-name
 DB_USER=your-database-username
 DB_PASSWORD=your-database-password
 DB_PORT=3306
+DB_TYPE=mysql
 ```
 
 ## 📁 Project Structure
@@ -72,21 +92,27 @@ agstation/
 ├── frontend/           # Customer-facing pages
 ├── user/               # User dashboard
 ├── config/             # Database configuration
-├── database/           # SQL schema and migrations
+├── database/           # SQL schemas (MySQL & PostgreSQL)
 ├── assets/             # CSS, JS, images
 ├── includes/           # Shared components (header, footer, etc.)
 ├── uploads/            # File uploads directory
+├── Dockerfile          # Docker configuration
 ├── composer.json       # PHP dependencies
 ├── Procfile           # Deployment configuration
-├── nixpacks.toml      # Railway/Nixpacks configuration
 └── index.php          # Main router
 ```
 
 ## 🗄️ Database Setup
 
-1. **Import Schema**: Use the SQL file in `database/agstation_schema.sql`
-2. **Configure Connection**: Set environment variables for your database
-3. **Test Connection**: Visit `/health` endpoint to verify connectivity
+### PostgreSQL (Render):
+1. Import `database/agstation_schema_postgresql.sql`
+2. Update environment variables
+3. Test connection via `/health` endpoint
+
+### MySQL (Railway/Local):
+1. Import `database/agstation_schema.sql`
+2. Update environment variables
+3. Test connection via `/health` endpoint
 
 ## 🏃‍♂️ Local Development
 
@@ -97,8 +123,8 @@ agstation/
    ```
 
 2. **Set up database**
-   - Create MySQL database
-   - Import `database/agstation_schema.sql`
+   - Create MySQL/PostgreSQL database
+   - Import appropriate schema file
 
 3. **Configure environment**
    - Copy `.env.example` to `.env`
@@ -112,21 +138,20 @@ agstation/
 5. **Access the application**
    - Frontend: `http://localhost:8000`
    - Admin: `http://localhost:8000/admin`
-
-## 📋 Requirements
-
-- PHP 8.0 or higher
-- MySQL 5.7 or higher
-- PDO PHP extension
-- Web server (Apache/Nginx) or PHP built-in server
+   - Health Check: `http://localhost:8000/health`
 
 ## 🔐 Default Admin Access
 
-After setting up the database, you'll need to create an admin user. You can do this by:
+After setting up the database:
+- Email: `admin@agstation.com`
+- Password: `admin123` (change this immediately!)
 
-1. Registering a regular user
-2. Manually updating the database to set admin role
-3. Or using the admin user creation script (if available)
+## 📋 Requirements
+
+- PHP 8.1 or higher
+- MySQL 5.7+ or PostgreSQL 13+
+- PDO PHP extension (with MySQL/PostgreSQL drivers)
+- Web server (Apache/Nginx) or PHP built-in server
 
 ## 🤝 Contributing
 
