@@ -145,7 +145,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !isset($_POST['guest_checkout'])) {
     }
     $items_json = json_encode($invoice_items);
 
-    $stmt = $pdo->prepare("INSERT INTO CustomerInvoices (customer_id, issue_date, due_date, total_amount, status, items) VALUES (?, NOW(), DATE_ADD(NOW(), INTERVAL 7 DAY), ?, 'Paid', ?)");
+    $stmt = $pdo->prepare("INSERT INTO CustomerInvoices (customer_id, issue_date, due_date, total_amount, status, items) VALUES (?, NOW(), NOW() + INTERVAL '7 days', ?, 'Paid', ?)");
     $stmt->execute([$customer_id, $total, $items_json]);
     // --- END INVOICE BLOCK ---
 
