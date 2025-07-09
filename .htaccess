@@ -20,6 +20,12 @@ RewriteRule ^(assets/.*)$ $1 [L]
     Header always set X-XSS-Protection "1; mode=block"
 </IfModule>
 
+# MIME type for SVG files
+<IfModule mod_mime.c>
+    AddType image/svg+xml svg svgz
+    AddEncoding gzip svgz
+</IfModule>
+
 # File upload settings
 php_value upload_max_filesize 10M
 php_value post_max_size 10M
