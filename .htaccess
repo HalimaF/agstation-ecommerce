@@ -1,7 +1,9 @@
 RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ index.php [QSA,L]
+
+# Handle uploads directory
+RewriteCond %{REQUEST_URI} ^/uploads/
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^uploads/(.*)$ /uploads/$1 [L]
 
 # Handle PHP files directly
 RewriteCond %{REQUEST_FILENAME} -f
@@ -10,3 +12,20 @@ RewriteRule ^(.+\.php)$ $1 [L]
 # Handle static assets
 RewriteCond %{REQUEST_FILENAME} -f
 RewriteRule ^(assets/.*)$ $1 [L]
+
+# Security headers
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options nosniff
+    Header always set X-Frame-Options DENY
+    Header always set X-XSS-Protection "1; mode=block"
+</IfModule>
+
+# File upload settings
+php_value upload_max_filesize 10M
+php_value post_max_size 10M
+php_value memory_limit 128M
+
+# Default redirect for other requests
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [QSA,L]

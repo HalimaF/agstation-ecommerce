@@ -29,7 +29,7 @@ try {
             <div class="col-md-3">
                 <div class="card mb-4 shadow-sm">
                     <a href="product_detail.php?asin=<?= htmlspecialchars($row['asin']) ?>">
-                        <img src="../uploads/product_images/<?= htmlspecialchars($row['image_url']) ?>" class="card-img-top" alt="<?= htmlspecialchars($row['name']) ?>" style="height: 220px; object-fit: contain; background: #fff; padding: 12px;">
+                        <img src="/uploads/product_images/<?= htmlspecialchars($row['image_url']) ?>" class="card-img-top" alt="<?= htmlspecialchars($row['name']) ?>" style="height: 220px; object-fit: contain; background: #fff; padding: 12px;">
                     </a>
                     <div class="card-body text-center">
                         <h5 class="card-title"><?= htmlspecialchars($row['name']) ?></h5>

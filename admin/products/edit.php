@@ -41,33 +41,25 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Handle file upload
     $image_url = $product['image_url'];
     if (!empty($_FILES['image']['name'])) {
-        // Use absolute path that works in Docker container
-        $uploadDir = $_SERVER['DOCUMENT_ROOT'] . '/uploads/product_images/';
-        
-        // Create directory if it doesn't exist
+        $uploadDir = __DIR__ . '/../../uploads/product_images/';
         if (!is_dir($uploadDir)) {
-            if (!mkdir($uploadDir, 0777, true)) {
-                $error = "Failed to create upload directory.";
-            }
+            mkdir($uploadDir, 0777, true);
         }
+        $imageName = uniqid('prod_') . '_' . basename($_FILES['image']['name']);
+        $imagePath = $uploadDir . $imageName;
         
-        // Check if directory is writable
-        if (!is_writable($uploadDir)) {
-            $error = "Upload directory is not writable.";
-        }
+        // Validate file type
+        $allowedTypes = ['image/jpeg', 'image/png', 'image/gif', 'image/webp'];
+        $fileType = mime_content_type($_FILES['image']['tmp_name']);
         
-        if (!isset($error)) {
-            $imageName = uniqid('prod_') . '_' . basename($_FILES['image']['name']);
-            $imagePath = $uploadDir . $imageName;
-            
-            // Check for upload errors
-            if ($_FILES['image']['error'] !== UPLOAD_ERR_OK) {
-                $error = "Upload error: " . $_FILES['image']['error'];
-            } elseif (move_uploaded_file($_FILES['image']['tmp_name'], $imagePath)) {
-                $image_url = $imageName;
-            } else {
-                $error = "Failed to upload the product image. Check directory permissions.";
-            }
+        if (!in_array($fileType, $allowedTypes)) {
+            $error = "Invalid file type. Please upload JPEG, PNG, GIF, or WebP images only.";
+        } elseif ($_FILES['image']['size'] > 5 * 1024 * 1024) { // 5MB limit
+            $error = "File size too large. Maximum 5MB allowed.";
+        } elseif (move_uploaded_file($_FILES['image']['tmp_name'], $imagePath)) {
+            $image_url = $imageName;
+        } else {
+            $error = "Failed to upload the product image.";
         }
     }
 
@@ -162,7 +154,7 @@ include_once '../../includes/header.php';
         <div class="mb-3">
             <label class="form-label">Product Image</label><br>
             <?php if (!empty($product['image_url'])): ?>
-                <img src="../../uploads/product_images/<?= htmlspecialchars($product['image_url']) ?>" width="80"><br>
+                <img src="/uploads/product_images/<?= htmlspecialchars($product['image_url']) ?>" width="80" alt="Current Product Image" style="max-height: 80px; object-fit: cover;"><br>
             <?php endif; ?>
             <input type="file" name="image" class="form-control mt-2">
         </div>

@@ -46,7 +46,7 @@ $total = 0;
                     </td>
                     <td>
                         <div class="cart-product-info">
-                            <img src="../uploads/product_images/<?= htmlspecialchars($product['image_url']) ?>" class="cart-product-img" alt="<?= htmlspecialchars($product['name']) ?>">
+                            <img src="/uploads/product_images/<?= htmlspecialchars($product['image_url']) ?>" class="cart-product-img" alt="<?= htmlspecialchars($product['name']) ?>">
                             <span><?= htmlspecialchars($product['name']) ?></span>
                         </div>
                     </td>

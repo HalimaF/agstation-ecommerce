@@ -51,7 +51,7 @@ try {
                 <td><?= $row['distributor_name'] ? htmlspecialchars($row['distributor_name']) : '<span class="text-muted">None</span>' ?></td>
                 <td>
                     <?php if (!empty($row['image_url'])): ?>
-                        <img src="../../uploads/product_images/<?= htmlspecialchars($row['image_url']) ?>" width="60">
+                        <img src="/uploads/product_images/<?= htmlspecialchars($row['image_url']) ?>" width="60" alt="Product Image" style="max-height: 60px; object-fit: cover;">
                     <?php endif; ?>
                 </td>
                 <td><?= htmlspecialchars($row['status']) ?></td>

@@ -19,11 +19,9 @@ COPY . /var/www/html/
 # Create health check
 RUN echo '<?php echo "Health Check OK - " . date("Y-m-d H:i:s"); ?>' > /var/www/html/health.php
 
-# Create uploads directory and set permissions
-RUN mkdir -p /var/www/html/uploads/product_images \
-    && chown -R www-data:www-data /var/www/html \
-    && chmod -R 755 /var/www/html \
-    && chmod -R 777 /var/www/html/uploads
+# Set permissions
+RUN chown -R www-data:www-data /var/www/html \
+    && chmod -R 755 /var/www/html
 
 # Expose port
 EXPOSE 80
