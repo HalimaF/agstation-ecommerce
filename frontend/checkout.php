@@ -228,7 +228,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !isset($_POST['guest_checkout'])) {
                                 <?php foreach ($order_items as $item): ?>
                                     <tr>
                                         <td>
-                                            <img src="/uploads/product_images/<?= htmlspecialchars($item['image_url']) ?>" alt="<?= htmlspecialchars($item['name']) ?>" style="width:40px;height:40px;object-fit:contain;border-radius:6px;margin-right:6px;">
+                                            <img src="/assets/images/products/<?= htmlspecialchars($item['image_url']) ?>" alt="<?= htmlspecialchars($item['name']) ?>" style="width:40px;height:40px;object-fit:contain;border-radius:6px;margin-right:6px;">
                                             <?= htmlspecialchars($item['name']) ?>
                                         </td>
                                         <td>$<?= number_format($item['retail_price'], 2) ?></td>

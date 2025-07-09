@@ -57,7 +57,7 @@ try {
                     <div class="col-md-3 d-flex">
                         <div class="card mb-4 shadow-sm w-100">
                             <a href="product_detail.php?asin=<?= htmlspecialchars($product['asin']) ?>">
-                                <img src="/uploads/product_images/<?= htmlspecialchars($product['image_url']) ?>" class="card-img-top" alt="<?= htmlspecialchars($product['name']) ?>">
+                                <img src="/assets/images/products/<?= htmlspecialchars($product['image_url']) ?>" class="card-img-top" alt="<?= htmlspecialchars($product['name']) ?>">
                             </a>
                             <div class="card-body text-center">
                                 <h5 class="card-title"><?= htmlspecialchars($product['name']) ?></h5>

@@ -154,7 +154,7 @@ include_once '../../includes/header.php';
         <div class="mb-3">
             <label class="form-label">Product Image</label><br>
             <?php if (!empty($product['image_url'])): ?>
-                <img src="/uploads/product_images/<?= htmlspecialchars($product['image_url']) ?>" width="80" alt="Current Product Image" style="max-height: 80px; object-fit: cover;"><br>
+                <img src="/assets/images/products/<?= htmlspecialchars($product['image_url']) ?>" width="80" alt="Current Product Image" style="max-height: 80px; object-fit: cover;"><br>
             <?php endif; ?>
             <input type="file" name="image" class="form-control mt-2">
         </div>

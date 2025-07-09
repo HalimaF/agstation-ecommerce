@@ -328,23 +328,32 @@ INSERT INTO Roles (role_name) VALUES
 INSERT INTO Users (name, email, password_hash, role_id) VALUES 
 ('System Admin', 'admin@agstation.com', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 1);
 
--- Insert sample warehouse
-INSERT INTO Warehouse (name, type, address, contact_person, phone) VALUES
-('Main Warehouse', 'Amazon FBA', '123 Warehouse St, City, State 12345', 'John Doe', '555-0123');
+-- Insert sample warehouse with explicit ID
+INSERT INTO Warehouse (warehouse_id, name, type, address, contact_person, phone) VALUES
+(1, 'Main Warehouse', 'Amazon FBA', '123 Warehouse St, City, State 12345', 'John Doe', '555-0123');
 
--- Insert sample brands
-INSERT INTO Brands (name, contact_email, phone_number, category, status) VALUES
-('Vivilux', 'contact@vivilux.com', '555-0101', 'Electronics', 'Active'),
-('G.E.Design', 'info@gedesign.com', '555-0102', 'Tools', 'Active'),
-('NatureCare', 'support@naturecare.com', '555-0103', 'Beauty & Personal Care', 'Active'),
-('HomeComfort', 'hello@homecomfort.com', '555-0104', 'Home & Garden', 'Active'),
-('SportsPro', 'contact@sportspro.com', '555-0105', 'Sports & Outdoors', 'Active'),
-('EduTech', 'info@edutech.com', '555-0106', 'Books & Education', 'Active'),
-('AutoMax', 'support@automax.com', '555-0107', 'Automotive', 'Active');
+-- Update the sequence to continue from the correct value
+SELECT setval('warehouse_warehouse_id_seq', 1, true);
 
--- Insert sample distributors
-INSERT INTO Distributors (name, contact_person, email, phone_number, address, country, status) VALUES
-('Global Supply Co', 'Jane Smith', 'jane@globalsupply.com', '555-0201', '456 Distributor Ave, City, State 67890', 'USA', 'Active');
+-- Insert sample brands with explicit IDs
+INSERT INTO Brands (brand_id, name, contact_email, phone_number, category, status) VALUES
+(1, 'Vivilux', 'contact@vivilux.com', '555-0101', 'Electronics', 'Active'),
+(2, 'G.E.Design', 'info@gedesign.com', '555-0102', 'Tools', 'Active'),
+(3, 'NatureCare', 'support@naturecare.com', '555-0103', 'Beauty & Personal Care', 'Active'),
+(4, 'HomeComfort', 'hello@homecomfort.com', '555-0104', 'Home & Garden', 'Active'),
+(5, 'SportsPro', 'contact@sportspro.com', '555-0105', 'Sports & Outdoors', 'Active'),
+(6, 'EduTech', 'info@edutech.com', '555-0106', 'Books & Education', 'Active'),
+(7, 'AutoMax', 'support@automax.com', '555-0107', 'Automotive', 'Active');
+
+-- Update the sequence to continue from the correct value
+SELECT setval('brands_brand_id_seq', 7, true);
+
+-- Insert sample distributors with explicit ID
+INSERT INTO Distributors (distributor_id, name, contact_person, email, phone_number, address, country, status) VALUES
+(1, 'Global Supply Co', 'Jane Smith', 'jane@globalsupply.com', '555-0201', '456 Distributor Ave, City, State 67890', 'USA', 'Active');
+
+-- Update the sequence to continue from the correct value
+SELECT setval('distributors_distributor_id_seq', 1, true);
 
 -- Insert sample products
 INSERT INTO Products (asin, name, category, cost_price, retail_price, description, status, brand_id, distributor_id) VALUES

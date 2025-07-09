@@ -173,7 +173,7 @@ try {
     <div class="product-detail-flex">
         <!-- Product Image -->
         <div class="product-detail-img-col">
-            <img src="/uploads/product_images/<?= htmlspecialchars($product['image_url']) ?>" alt="<?= htmlspecialchars($product['name']) ?>" class="main-product-img">
+            <img src="/assets/images/products/<?= htmlspecialchars($product['image_url']) ?>" alt="<?= htmlspecialchars($product['name']) ?>" class="main-product-img">
         </div>
         <!-- Product Details -->
         <div class="product-detail-info-col">
