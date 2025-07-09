@@ -1,0 +1,67 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#1a1a2e"/>
+  
+  <!-- Diffuser base -->
+  <ellipse cx="200" cy="220" rx="80" ry="25" fill="#2c3e50"/>
+  <rect x="120" y="150" width="160" height="70" fill="#34495e" rx="5"/>
+  <ellipse cx="200" cy="150" rx="80" ry="25" fill="#3498db"/>
+  
+  <!-- Water level indicator -->
+  <rect x="140" y="170" width="120" height="30" fill="#2980b9" rx="3"/>
+  <text x="200" y="188" font-family="Arial, sans-serif" font-size="10" 
+        text-anchor="middle" fill="#ecf0f1">MAX</text>
+  
+  <!-- Control buttons -->
+  <circle cx="170" cy="210" r="8" fill="#e74c3c"/>
+  <circle cx="200" cy="210" r="8" fill="#f39c12"/>
+  <circle cx="230" cy="210" r="8" fill="#27ae60"/>
+  
+  <!-- Mist/vapor effect -->
+  <g opacity="0.8">
+    <path d="M180 140 Q185 120 190 140 Q195 110 200 140 Q205 120 210 140 Q215 100 220 140" 
+          stroke="#ecf0f1" stroke-width="2" fill="none"/>
+    <path d="M175 135 Q180 115 185 135 Q190 105 195 135 Q200 115 205 135 Q210 95 215 135" 
+          stroke="#ecf0f1" stroke-width="1.5" fill="none" opacity="0.6"/>
+    <path d="M185 138 Q190 118 195 138 Q200 108 205 138 Q210 118 215 138 Q220 98 225 138" 
+          stroke="#ecf0f1" stroke-width="1" fill="none" opacity="0.4"/>
+  </g>
+  
+  <!-- LED color effects -->
+  <g opacity="0.7">
+    <circle cx="200" cy="150" r="70" fill="none" stroke="#ff6b6b" stroke-width="2"/>
+    <circle cx="200" cy="150" r="65" fill="none" stroke="#4ecdc4" stroke-width="2"/>
+    <circle cx="200" cy="150" r="60" fill="none" stroke="#45b7d1" stroke-width="2"/>
+    <circle cx="200" cy="150" r="55" fill="none" stroke="#f9ca24" stroke-width="2"/>
+    <circle cx="200" cy="150" r="50" fill="none" stroke="#6c5ce7" stroke-width="2"/>
+    <circle cx="200" cy="150" r="45" fill="none" stroke="#fd79a8" stroke-width="2"/>
+    <circle cx="200" cy="150" r="40" fill="none" stroke="#00b894" stroke-width="2"/>
+  </g>
+  
+  <!-- Essential oil bottle -->
+  <rect x="310" y="180" width="20" height="40" fill="#8b4513" rx="2"/>
+  <rect x="312" y="175" width="16" height="8" fill="#2c3e50"/>
+  <circle cx="320" cy="175" r="3" fill="#e74c3c"/>
+  <text x="320" y="240" font-family="Arial, sans-serif" font-size="8" 
+        text-anchor="middle" fill="#ecf0f1">Oil</text>
+  
+  <!-- Timer display -->
+  <rect x="60" y="180" width="40" height="20" fill="#2c3e50" rx="3"/>
+  <text x="80" y="193" font-family="Arial, sans-serif" font-size="12" 
+        text-anchor="middle" fill="#e74c3c">1:30</text>
+  
+  <!-- Decorative elements -->
+  <g opacity="0.5">
+    <circle cx="50" cy="50" r="3" fill="#f39c12"/>
+    <circle cx="350" cy="60" r="2" fill="#e74c3c"/>
+    <circle cx="70" cy="80" r="2" fill="#27ae60"/>
+    <circle cx="330" cy="40" r="3" fill="#3498db"/>
+    <circle cx="380" cy="90" r="2" fill="#9b59b6"/>
+  </g>
+  
+  <!-- Title -->
+  <text x="200" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" 
+        text-anchor="middle" fill="#ecf0f1">Essential Oil Diffuser</text>
+  <text x="200" y="60" font-family="Arial, sans-serif" font-size="14" 
+        text-anchor="middle" fill="#bdc3c7">7 LED Colors • Timer • Ultrasonic</text>
+</svg>

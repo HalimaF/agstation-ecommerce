@@ -1,0 +1,115 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#f0f8ff"/>
+  
+  <!-- Bluetooth speaker body -->
+  <rect x="120" y="100" width="160" height="80" fill="#2c3e50" rx="40"/>
+  <rect x="125" y="105" width="150" height="70" fill="#34495e" rx="35"/>
+  <rect x="130" y="110" width="140" height="60" fill="#4a5568" rx="30"/>
+  
+  <!-- Speaker grille -->
+  <rect x="140" y="120" width="120" height="40" fill="#2c3e50" rx="20"/>
+  <g opacity="0.8">
+    <circle cx="155" cy="130" r="3" fill="#7f8c8d"/>
+    <circle cx="165" cy="130" r="3" fill="#7f8c8d"/>
+    <circle cx="175" cy="130" r="3" fill="#7f8c8d"/>
+    <circle cx="185" cy="130" r="3" fill="#7f8c8d"/>
+    <circle cx="195" cy="130" r="3" fill="#7f8c8d"/>
+    <circle cx="205" cy="130" r="3" fill="#7f8c8d"/>
+    <circle cx="215" cy="130" r="3" fill="#7f8c8d"/>
+    <circle cx="225" cy="130" r="3" fill="#7f8c8d"/>
+    <circle cx="235" cy="130" r="3" fill="#7f8c8d"/>
+    <circle cx="245" cy="130" r="3" fill="#7f8c8d"/>
+    
+    <circle cx="155" cy="140" r="3" fill="#7f8c8d"/>
+    <circle cx="165" cy="140" r="3" fill="#7f8c8d"/>
+    <circle cx="175" cy="140" r="3" fill="#7f8c8d"/>
+    <circle cx="185" cy="140" r="3" fill="#7f8c8d"/>
+    <circle cx="195" cy="140" r="3" fill="#7f8c8d"/>
+    <circle cx="205" cy="140" r="3" fill="#7f8c8d"/>
+    <circle cx="215" cy="140" r="3" fill="#7f8c8d"/>
+    <circle cx="225" cy="140" r="3" fill="#7f8c8d"/>
+    <circle cx="235" cy="140" r="3" fill="#7f8c8d"/>
+    <circle cx="245" cy="140" r="3" fill="#7f8c8d"/>
+    
+    <circle cx="155" cy="150" r="3" fill="#7f8c8d"/>
+    <circle cx="165" cy="150" r="3" fill="#7f8c8d"/>
+    <circle cx="175" cy="150" r="3" fill="#7f8c8d"/>
+    <circle cx="185" cy="150" r="3" fill="#7f8c8d"/>
+    <circle cx="195" cy="150" r="3" fill="#7f8c8d"/>
+    <circle cx="205" cy="150" r="3" fill="#7f8c8d"/>
+    <circle cx="215" cy="150" r="3" fill="#7f8c8d"/>
+    <circle cx="225" cy="150" r="3" fill="#7f8c8d"/>
+    <circle cx="235" cy="150" r="3" fill="#7f8c8d"/>
+    <circle cx="245" cy="150" r="3" fill="#7f8c8d"/>
+  </g>
+  
+  <!-- Control buttons -->
+  <circle cx="200" cy="190" r="8" fill="#3498db"/>
+  <path d="M195 190 L205 185 L205 195 Z" fill="#ffffff"/>
+  
+  <circle cx="180" cy="190" r="6" fill="#27ae60"/>
+  <text x="180" y="194" font-family="Arial, sans-serif" font-size="8" font-weight="bold" 
+        text-anchor="middle" fill="#ffffff">-</text>
+  
+  <circle cx="220" cy="190" r="6" fill="#27ae60"/>
+  <text x="220" y="194" font-family="Arial, sans-serif" font-size="8" font-weight="bold" 
+        text-anchor="middle" fill="#ffffff">+</text>
+  
+  <!-- Power button -->
+  <circle cx="160" cy="190" r="6" fill="#e74c3c"/>
+  <circle cx="160" cy="190" r="3" fill="#ffffff"/>
+  
+  <!-- Bluetooth indicator -->
+  <circle cx="240" cy="190" r="6" fill="#9b59b6"/>
+  <path d="M237 190 Q240 187 243 190 Q240 193 237 190" fill="#ffffff"/>
+  
+  <!-- Waterproof indicator -->
+  <rect x="290" y="120" width="40" height="20" fill="#3498db" rx="10"/>
+  <text x="310" y="133" font-family="Arial, sans-serif" font-size="10" font-weight="bold" 
+        text-anchor="middle" fill="#ffffff">IPX7</text>
+  
+  <!-- Water drops -->
+  <g opacity="0.7">
+    <path d="M300 100 Q305 95 310 100 Q305 105 300 100" fill="#87ceeb"/>
+    <path d="M320 110 Q325 105 330 110 Q325 115 320 110" fill="#87ceeb"/>
+    <path d="M340 90 Q345 85 350 90 Q345 95 340 90" fill="#87ceeb"/>
+    <path d="M290 80 Q295 75 300 80 Q295 85 290 80" fill="#87ceeb"/>
+  </g>
+  
+  <!-- Sound waves -->
+  <g opacity="0.6">
+    <path d="M80 140 Q120 140 120 140" stroke="#f39c12" stroke-width="2" fill="none"/>
+    <path d="M70 140 Q120 120 120 160" stroke="#f39c12" stroke-width="2" fill="none"/>
+    <path d="M60 140 Q120 110 120 170" stroke="#f39c12" stroke-width="2" fill="none"/>
+    <path d="M50 140 Q120 100 120 180" stroke="#f39c12" stroke-width="2" fill="none"/>
+    
+    <path d="M320 140 Q280 140 280 140" stroke="#f39c12" stroke-width="2" fill="none"/>
+    <path d="M330 140 Q280 120 280 160" stroke="#f39c12" stroke-width="2" fill="none"/>
+    <path d="M340 140 Q280 110 280 170" stroke="#f39c12" stroke-width="2" fill="none"/>
+    <path d="M350 140 Q280 100 280 180" stroke="#f39c12" stroke-width="2" fill="none"/>
+  </g>
+  
+  <!-- Battery indicator -->
+  <rect x="180" y="210" width="40" height="8" fill="#2c3e50" rx="4"/>
+  <rect x="185" y="212" width="25" height="4" fill="#27ae60" rx="2"/>
+  <text x="200" y="228" font-family="Arial, sans-serif" font-size="10" 
+        text-anchor="middle" fill="#7f8c8d">20H Battery</text>
+  
+  <!-- Charging port -->
+  <rect x="290" y="180" width="15" height="5" fill="#2c3e50" rx="2"/>
+  <text x="297" y="175" font-family="Arial, sans-serif" font-size="8" 
+        text-anchor="middle" fill="#7f8c8d">USB-C</text>
+  
+  <!-- Pool/beach scene -->
+  <rect x="0" y="240" width="400" height="60" fill="#87ceeb" opacity="0.5"/>
+  <circle cx="100" cy="260" r="8" fill="#f1c40f" opacity="0.8"/>
+  <circle cx="300" cy="270" r="6" fill="#f1c40f" opacity="0.8"/>
+  <circle cx="150" cy="280" r="5" fill="#f1c40f" opacity="0.8"/>
+  
+  <!-- Title -->
+  <text x="200" y="30" font-family="Arial, sans-serif" font-size="24" font-weight="bold" 
+        text-anchor="middle" fill="#2c3e50">Bluetooth Speaker Waterproof</text>
+  <text x="200" y="50" font-family="Arial, sans-serif" font-size="14" 
+        text-anchor="middle" fill="#7f8c8d">IPX7 • 20-Hour Battery • Portable</text>
+</svg>

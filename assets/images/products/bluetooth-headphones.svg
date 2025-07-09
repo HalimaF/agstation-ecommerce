@@ -1,0 +1,18 @@
+<svg width="500" height="500" xmlns="http://www.w3.org/2000/svg">
+  <rect width="500" height="500" fill="#f8f9fa"/>
+  <rect x="50" y="50" width="400" height="400" fill="#ffffff" stroke="#dee2e6" stroke-width="2" rx="20"/>
+  
+  <!-- Headphones -->
+  <circle cx="180" cy="200" r="45" fill="#2c3e50" stroke="#34495e" stroke-width="3"/>
+  <circle cx="320" cy="200" r="45" fill="#2c3e50" stroke="#34495e" stroke-width="3"/>
+  <path d="M 225 160 Q 250 140 275 160" stroke="#2c3e50" stroke-width="8" fill="none"/>
+  <rect x="165" y="245" width="30" height="15" fill="#34495e" rx="7"/>
+  <rect x="305" y="245" width="30" height="15" fill="#34495e" rx="7"/>
+  
+  <!-- Bluetooth symbol -->
+  <path d="M 250 120 L 260 110 L 260 130 L 270 120 L 260 110 M 260 130 L 270 140 L 260 150 L 250 140" 
+        stroke="#3498db" stroke-width="2" fill="none"/>
+  
+  <text x="250" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2c3e50">Bluetooth Headphones</text>
+  <text x="250" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#7f8c8d">Premium Audio Quality</text>
+</svg>

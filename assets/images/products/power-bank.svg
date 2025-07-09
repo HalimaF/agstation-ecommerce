@@ -1,0 +1,32 @@
+<svg width="500" height="500" xmlns="http://www.w3.org/2000/svg">
+  <rect width="500" height="500" fill="#f8f9fa"/>
+  <rect x="50" y="50" width="400" height="400" fill="#ffffff" stroke="#dee2e6" stroke-width="2" rx="20"/>
+  
+  <!-- Power bank body -->
+  <rect x="170" y="180" width="160" height="80" fill="#2c3e50" rx="15"/>
+  <rect x="175" y="185" width="150" height="70" fill="#34495e" rx="10"/>
+  
+  <!-- USB ports -->
+  <rect x="340" y="205" width="15" height="8" fill="#1a252f" rx="2"/>
+  <rect x="340" y="225" width="15" height="8" fill="#1a252f" rx="2"/>
+  <rect x="340" y="245" width="15" height="8" fill="#1a252f" rx="2"/>
+  
+  <!-- LED display -->
+  <rect x="190" y="200" width="50" height="20" fill="#000000" rx="3"/>
+  <text x="215" y="214" text-anchor="middle" font-family="monospace" font-size="12" fill="#00ff00">85%</text>
+  
+  <!-- Power button -->
+  <circle cx="280" cy="210" r="8" fill="#3498db"/>
+  
+  <!-- Battery indicators -->
+  <rect x="200" y="235" width="8" height="15" fill="#27ae60"/>
+  <rect x="212" y="235" width="8" height="15" fill="#27ae60"/>
+  <rect x="224" y="235" width="8" height="15" fill="#27ae60"/>
+  <rect x="236" y="235" width="8" height="15" fill="#95a5a6"/>
+  
+  <!-- Lightning bolt -->
+  <path d="M 290 190 L 300 180 L 295 190 L 305 190 L 295 200 L 300 190 Z" fill="#f1c40f"/>
+  
+  <text x="250" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2c3e50">Power Bank 20000mAh</text>
+  <text x="250" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#7f8c8d">Fast Charging · LED Display</text>
+</svg>

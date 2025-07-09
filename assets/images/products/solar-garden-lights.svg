@@ -1,0 +1,85 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#001122"/>
+  
+  <!-- Ground -->
+  <ellipse cx="200" cy="280" rx="180" ry="15" fill="#2d5016"/>
+  
+  <!-- Solar lights -->
+  <g>
+    <!-- Light 1 -->
+    <rect x="40" y="200" width="8" height="80" fill="#4a4a4a"/>
+    <circle cx="44" cy="190" r="12" fill="#ffd700" opacity="0.8"/>
+    <circle cx="44" cy="190" r="8" fill="#ffff00" opacity="0.6"/>
+    
+    <!-- Light 2 -->
+    <rect x="90" y="180" width="8" height="100" fill="#4a4a4a"/>
+    <circle cx="94" cy="170" r="12" fill="#ffd700" opacity="0.8"/>
+    <circle cx="94" cy="170" r="8" fill="#ffff00" opacity="0.6"/>
+    
+    <!-- Light 3 -->
+    <rect x="140" y="190" width="8" height="90" fill="#4a4a4a"/>
+    <circle cx="144" cy="180" r="12" fill="#ffd700" opacity="0.8"/>
+    <circle cx="144" cy="180" r="8" fill="#ffff00" opacity="0.6"/>
+    
+    <!-- Light 4 -->
+    <rect x="190" y="185" width="8" height="95" fill="#4a4a4a"/>
+    <circle cx="194" cy="175" r="12" fill="#ffd700" opacity="0.8"/>
+    <circle cx="194" cy="175" r="8" fill="#ffff00" opacity="0.6"/>
+    
+    <!-- Light 5 -->
+    <rect x="240" y="195" width="8" height="85" fill="#4a4a4a"/>
+    <circle cx="244" cy="185" r="12" fill="#ffd700" opacity="0.8"/>
+    <circle cx="244" cy="185" r="8" fill="#ffff00" opacity="0.6"/>
+    
+    <!-- Light 6 -->
+    <rect x="290" y="175" width="8" height="105" fill="#4a4a4a"/>
+    <circle cx="294" cy="165" r="12" fill="#ffd700" opacity="0.8"/>
+    <circle cx="294" cy="165" r="8" fill="#ffff00" opacity="0.6"/>
+    
+    <!-- Light 7 -->
+    <rect x="340" y="190" width="8" height="90" fill="#4a4a4a"/>
+    <circle cx="344" cy="180" r="12" fill="#ffd700" opacity="0.8"/>
+    <circle cx="344" cy="180" r="8" fill="#ffff00" opacity="0.6"/>
+    
+    <!-- Light 8 -->
+    <rect x="380" y="200" width="8" height="80" fill="#4a4a4a"/>
+    <circle cx="384" cy="190" r="12" fill="#ffd700" opacity="0.8"/>
+    <circle cx="384" cy="190" r="8" fill="#ffff00" opacity="0.6"/>
+  </g>
+  
+  <!-- Light beams -->
+  <g opacity="0.3">
+    <path d="M44 202 L34 240 L54 240 Z" fill="#ffff00"/>
+    <path d="M94 182 L84 220 L104 220 Z" fill="#ffff00"/>
+    <path d="M144 192 L134 230 L154 230 Z" fill="#ffff00"/>
+    <path d="M194 187 L184 225 L204 225 Z" fill="#ffff00"/>
+    <path d="M244 197 L234 235 L254 235 Z" fill="#ffff00"/>
+    <path d="M294 177 L284 215 L304 215 Z" fill="#ffff00"/>
+    <path d="M344 192 L334 230 L354 230 Z" fill="#ffff00"/>
+    <path d="M384 202 L374 240 L394 240 Z" fill="#ffff00"/>
+  </g>
+  
+  <!-- Stars -->
+  <g fill="#ffffff" opacity="0.8">
+    <circle cx="50" cy="50" r="1.5"/>
+    <circle cx="120" cy="30" r="1"/>
+    <circle cx="180" cy="40" r="1.5"/>
+    <circle cx="250" cy="25" r="1"/>
+    <circle cx="320" cy="35" r="1.5"/>
+    <circle cx="370" cy="45" r="1"/>
+    <circle cx="80" cy="70" r="1"/>
+    <circle cx="200" cy="20" r="1"/>
+    <circle cx="300" cy="60" r="1"/>
+  </g>
+  
+  <!-- Solar panel on one light -->
+  <rect x="40" y="178" width="8" height="6" fill="#1a1a1a"/>
+  <rect x="41" y="179" width="6" height="4" fill="#4169e1"/>
+  
+  <!-- Title -->
+  <text x="200" y="120" font-family="Arial, sans-serif" font-size="24" font-weight="bold" 
+        text-anchor="middle" fill="#ffffff">Solar Garden Lights</text>
+  <text x="200" y="140" font-family="Arial, sans-serif" font-size="14" 
+        text-anchor="middle" fill="#cccccc">Set of 8 LED Solar Lights</text>
+</svg>

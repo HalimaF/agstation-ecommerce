@@ -1,0 +1,88 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#001122"/>
+  
+  <!-- Lantern body -->
+  <rect x="150" y="80" width="100" height="140" fill="#2c3e50" rx="10"/>
+  <rect x="155" y="85" width="90" height="130" fill="#34495e" rx="8"/>
+  <rect x="160" y="90" width="80" height="120" fill="#4a5568" rx="6"/>
+  
+  <!-- LED panel -->
+  <rect x="170" y="100" width="60" height="80" fill="#ffffff" rx="5"/>
+  <rect x="175" y="105" width="50" height="70" fill="#f7fafc" rx="3"/>
+  
+  <!-- LED lights -->
+  <g>
+    <circle cx="185" cy="120" r="4" fill="#ffd700"/>
+    <circle cx="200" cy="120" r="4" fill="#ffd700"/>
+    <circle cx="215" cy="120" r="4" fill="#ffd700"/>
+    <circle cx="185" cy="135" r="4" fill="#ffd700"/>
+    <circle cx="200" cy="135" r="4" fill="#ffd700"/>
+    <circle cx="215" cy="135" r="4" fill="#ffd700"/>
+    <circle cx="185" cy="150" r="4" fill="#ffd700"/>
+    <circle cx="200" cy="150" r="4" fill="#ffd700"/>
+    <circle cx="215" cy="150" r="4" fill="#ffd700"/>
+    <circle cx="185" cy="165" r="4" fill="#ffd700"/>
+    <circle cx="200" cy="165" r="4" fill="#ffd700"/>
+    <circle cx="215" cy="165" r="4" fill="#ffd700"/>
+  </g>
+  
+  <!-- Light beam -->
+  <g opacity="0.7">
+    <path d="M160 100 L50 50 L50 250 L160 200 Z" fill="#ffff00" opacity="0.3"/>
+    <path d="M240 100 L350 50 L350 250 L240 200 Z" fill="#ffff00" opacity="0.3"/>
+  </g>
+  
+  <!-- Handle -->
+  <rect x="190" y="60" width="20" height="25" fill="#2c3e50" rx="10"/>
+  <rect x="195" y="65" width="10" height="15" fill="#34495e" rx="5"/>
+  
+  <!-- Control buttons -->
+  <circle cx="180" cy="190" r="6" fill="#e74c3c"/>
+  <circle cx="200" cy="190" r="6" fill="#27ae60"/>
+  <circle cx="220" cy="190" r="6" fill="#3498db"/>
+  
+  <!-- Power button -->
+  <circle cx="200" cy="210" r="8" fill="#95a5a6"/>
+  <circle cx="200" cy="210" r="6" fill="#ecf0f1"/>
+  <text x="200" y="214" font-family="Arial, sans-serif" font-size="10" font-weight="bold" 
+        text-anchor="middle" fill="#2c3e50">⚡</text>
+  
+  <!-- USB port -->
+  <rect x="190" y="225" width="20" height="5" fill="#2c3e50" rx="2"/>
+  <text x="200" y="240" font-family="Arial, sans-serif" font-size="8" 
+        text-anchor="middle" fill="#ecf0f1">USB</text>
+  
+  <!-- SOS indicator -->
+  <circle cx="170" cy="250" r="5" fill="#e74c3c"/>
+  <text x="170" y="254" font-family="Arial, sans-serif" font-size="6" font-weight="bold" 
+        text-anchor="middle" fill="#ffffff">SOS</text>
+  
+  <!-- Power bank function -->
+  <rect x="220" y="245" width="20" height="10" fill="#34495e" rx="2"/>
+  <text x="230" y="252" font-family="Arial, sans-serif" font-size="6" 
+        text-anchor="middle" fill="#ecf0f1">POWER</text>
+  
+  <!-- Battery indicator -->
+  <rect x="160" y="70" width="80" height="8" fill="#2c3e50" rx="4"/>
+  <rect x="165" y="72" width="60" height="4" fill="#27ae60" rx="2"/>
+  <text x="200" y="68" font-family="Arial, sans-serif" font-size="8" 
+        text-anchor="middle" fill="#ecf0f1">100%</text>
+  
+  <!-- Camping scene elements -->
+  <g opacity="0.5">
+    <!-- Trees -->
+    <path d="M30 200 Q40 180 50 200 Q40 220 30 200" fill="#228b22"/>
+    <path d="M370 180 Q380 160 390 180 Q380 200 370 180" fill="#228b22"/>
+    
+    <!-- Mountains -->
+    <path d="M0 250 L50 200 L100 250 Z" fill="#2c3e50"/>
+    <path d="M300 250 L350 200 L400 250 Z" fill="#2c3e50"/>
+  </g>
+  
+  <!-- Title -->
+  <text x="200" y="30" font-family="Arial, sans-serif" font-size="24" font-weight="bold" 
+        text-anchor="middle" fill="#ecf0f1">Camping Lantern LED</text>
+  <text x="200" y="50" font-family="Arial, sans-serif" font-size="14" 
+        text-anchor="middle" fill="#bdc3c7">Rechargeable • Power Bank • SOS Mode</text>
+</svg>

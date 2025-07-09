@@ -1,0 +1,20 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#f5f5f5"/>
+  
+  <!-- Product placeholder -->
+  <rect x="100" y="50" width="200" height="200" fill="#e0e0e0" rx="10"/>
+  <rect x="110" y="60" width="180" height="180" fill="#f0f0f0" rx="8"/>
+  
+  <!-- Generic product icon -->
+  <circle cx="200" cy="150" r="50" fill="#bdc3c7"/>
+  <path d="M175 135 Q200 120 225 135 Q200 150 175 135" fill="#95a5a6"/>
+  <text x="200" y="155" font-family="Arial, sans-serif" font-size="16" font-weight="bold" 
+        text-anchor="middle" fill="#2c3e50">PRODUCT</text>
+  
+  <!-- Title -->
+  <text x="200" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" 
+        text-anchor="middle" fill="#2c3e50">Product Image</text>
+  <text x="200" y="280" font-family="Arial, sans-serif" font-size="14" 
+        text-anchor="middle" fill="#7f8c8d">Coming Soon</text>
+</svg>

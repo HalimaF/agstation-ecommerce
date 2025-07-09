@@ -1,0 +1,56 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#f5f5f5"/>
+  
+  <!-- Large cutting board -->
+  <rect x="50" y="80" width="300" height="180" fill="#daa520" rx="10"/>
+  <rect x="55" y="85" width="290" height="170" fill="#f4a460" rx="8"/>
+  
+  <!-- Medium cutting board -->
+  <rect x="80" y="60" width="240" height="140" fill="#cd853f" rx="8"/>
+  <rect x="85" y="65" width="230" height="130" fill="#daa520" rx="6"/>
+  
+  <!-- Small cutting board -->
+  <rect x="110" y="40" width="180" height="100" fill="#8b4513" rx="6"/>
+  <rect x="115" y="45" width="170" height="90" fill="#cd853f" rx="4"/>
+  
+  <!-- Wood grain patterns -->
+  <g opacity="0.3">
+    <path d="M70 100 Q200 95 330 100" stroke="#8b4513" stroke-width="1" fill="none"/>
+    <path d="M70 120 Q200 115 330 120" stroke="#8b4513" stroke-width="1" fill="none"/>
+    <path d="M70 140 Q200 135 330 140" stroke="#8b4513" stroke-width="1" fill="none"/>
+    <path d="M70 160 Q200 155 330 160" stroke="#8b4513" stroke-width="1" fill="none"/>
+    <path d="M70 180 Q200 175 330 180" stroke="#8b4513" stroke-width="1" fill="none"/>
+    <path d="M70 200 Q200 195 330 200" stroke="#8b4513" stroke-width="1" fill="none"/>
+    <path d="M70 220 Q200 215 330 220" stroke="#8b4513" stroke-width="1" fill="none"/>
+    <path d="M70 240 Q200 235 330 240" stroke="#8b4513" stroke-width="1" fill="none"/>
+  </g>
+  
+  <!-- Juice groove on large board -->
+  <path d="M70 100 L330 100 Q340 100 340 110 L340 240 Q340 250 330 250 L70 250 Q60 250 60 240 L60 110 Q60 100 70 100" 
+        stroke="#8b4513" stroke-width="2" fill="none"/>
+  
+  <!-- Non-slip feet dots -->
+  <circle cx="70" cy="90" r="3" fill="#696969"/>
+  <circle cx="330" cy="90" r="3" fill="#696969"/>
+  <circle cx="70" cy="250" r="3" fill="#696969"/>
+  <circle cx="330" cy="250" r="3" fill="#696969"/>
+  
+  <!-- Handle holes -->
+  <ellipse cx="200" cy="70" rx="8" ry="4" fill="#8b4513"/>
+  <ellipse cx="200" cy="270" rx="8" ry="4" fill="#8b4513"/>
+  
+  <!-- Decorative bamboo leaves -->
+  <g opacity="0.6">
+    <path d="M20 50 Q30 40 40 50 Q30 60 20 50" fill="#228b22"/>
+    <path d="M360 250 Q370 240 380 250 Q370 260 360 250" fill="#228b22"/>
+    <path d="M25 45 Q35 35 45 45" stroke="#006400" stroke-width="1" fill="none"/>
+    <path d="M365 245 Q375 235 385 245" stroke="#006400" stroke-width="1" fill="none"/>
+  </g>
+  
+  <!-- Title -->
+  <text x="200" y="30" font-family="Arial, sans-serif" font-size="22" font-weight="bold" 
+        text-anchor="middle" fill="#2c3e50">Bamboo Cutting Board Set</text>
+  <text x="200" y="290" font-family="Arial, sans-serif" font-size="14" 
+        text-anchor="middle" fill="#7f8c8d">Set of 3 • Non-slip Feet • Juice Grooves</text>
+</svg>

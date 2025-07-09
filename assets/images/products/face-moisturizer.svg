@@ -1,0 +1,68 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#f8f9fa"/>
+  
+  <!-- Jar body -->
+  <rect x="150" y="100" width="100" height="120" fill="#ffffff" rx="10"/>
+  <rect x="155" y="105" width="90" height="110" fill="#faf0e6" rx="8"/>
+  
+  <!-- Jar lid -->
+  <rect x="140" y="85" width="120" height="25" fill="#daa520" rx="5"/>
+  <rect x="145" y="90" width="110" height="15" fill="#f4a460" rx="3"/>
+  
+  <!-- Label -->
+  <rect x="160" y="130" width="80" height="60" fill="#ffffff" rx="3"/>
+  <text x="200" y="150" font-family="Arial, sans-serif" font-size="12" font-weight="bold" 
+        text-anchor="middle" fill="#2c3e50">ORGANIC</text>
+  <text x="200" y="165" font-family="Arial, sans-serif" font-size="10" 
+        text-anchor="middle" fill="#2c3e50">Face Moisturizer</text>
+  <text x="200" y="180" font-family="Arial, sans-serif" font-size="8" 
+        text-anchor="middle" fill="#7f8c8d">Hyaluronic Acid</text>
+  
+  <!-- Decorative botanical elements -->
+  <g opacity="0.6">
+    <!-- Leaves -->
+    <path d="M100 120 Q110 110 120 120 Q110 130 100 120" fill="#228b22"/>
+    <path d="M280 140 Q290 130 300 140 Q290 150 280 140" fill="#228b22"/>
+    <path d="M90 160 Q100 150 110 160 Q100 170 90 160" fill="#32cd32"/>
+    <path d="M290 180 Q300 170 310 180 Q300 190 290 180" fill="#32cd32"/>
+    
+    <!-- Flowers -->
+    <circle cx="80" cy="200" r="6" fill="#ff69b4"/>
+    <circle cx="75" cy="195" r="3" fill="#ffb6c1"/>
+    <circle cx="85" cy="195" r="3" fill="#ffb6c1"/>
+    <circle cx="75" cy="205" r="3" fill="#ffb6c1"/>
+    <circle cx="85" cy="205" r="3" fill="#ffb6c1"/>
+    
+    <circle cx="320" cy="220" r="6" fill="#dda0dd"/>
+    <circle cx="315" cy="215" r="3" fill="#e6e6fa"/>
+    <circle cx="325" cy="215" r="3" fill="#e6e6fa"/>
+    <circle cx="315" cy="225" r="3" fill="#e6e6fa"/>
+    <circle cx="325" cy="225" r="3" fill="#e6e6fa"/>
+  </g>
+  
+  <!-- Cream texture -->
+  <ellipse cx="200" cy="180" rx="25" ry="15" fill="#fff8dc" opacity="0.8"/>
+  <ellipse cx="200" cy="180" rx="20" ry="10" fill="#ffffff" opacity="0.9"/>
+  
+  <!-- Vitamin E symbol -->
+  <circle cx="220" cy="170" r="8" fill="#ffd700" opacity="0.7"/>
+  <text x="220" y="175" font-family="Arial, sans-serif" font-size="10" font-weight="bold" 
+        text-anchor="middle" fill="#2c3e50">E</text>
+  
+  <!-- Natural/organic badge -->
+  <circle cx="180" cy="150" r="12" fill="#32cd32" opacity="0.8"/>
+  <text x="180" y="155" font-family="Arial, sans-serif" font-size="8" font-weight="bold" 
+        text-anchor="middle" fill="#ffffff">100%</text>
+  
+  <!-- Title -->
+  <text x="200" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" 
+        text-anchor="middle" fill="#2c3e50">Organic Face Moisturizer</text>
+  <text x="200" y="60" font-family="Arial, sans-serif" font-size="14" 
+        text-anchor="middle" fill="#7f8c8d">Natural • Hyaluronic Acid • Vitamin E</text>
+  
+  <!-- Droplets -->
+  <circle cx="120" cy="250" r="3" fill="#87ceeb" opacity="0.7"/>
+  <circle cx="280" cy="260" r="2" fill="#87ceeb" opacity="0.7"/>
+  <circle cx="150" cy="270" r="2" fill="#87ceeb" opacity="0.7"/>
+</svg>

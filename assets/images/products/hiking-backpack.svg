@@ -1,0 +1,84 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#f0f8ff"/>
+  
+  <!-- Backpack main body -->
+  <rect x="120" y="60" width="160" height="200" fill="#228b22" rx="10"/>
+  <rect x="125" y="65" width="150" height="190" fill="#32cd32" rx="8"/>
+  <rect x="130" y="70" width="140" height="180" fill="#90ee90" rx="6"/>
+  
+  <!-- Front pocket -->
+  <rect x="140" y="120" width="120" height="80" fill="#006400" rx="5"/>
+  <rect x="145" y="125" width="110" height="70" fill="#228b22" rx="4"/>
+  
+  <!-- Zipper -->
+  <line x1="140" y1="120" x2="260" y2="120" stroke="#2c3e50" stroke-width="2"/>
+  <circle cx="250" cy="120" r="3" fill="#7f8c8d"/>
+  
+  <!-- Side pockets -->
+  <rect x="100" y="150" width="25" height="60" fill="#006400" rx="5"/>
+  <rect x="275" y="150" width="25" height="60" fill="#006400" rx="5"/>
+  
+  <!-- Water bottle in side pocket -->
+  <rect x="105" y="140" width="15" height="40" fill="#3498db" rx="2"/>
+  <rect x="107" y="135" width="11" height="5" fill="#2c3e50"/>
+  <circle cx="112" cy="135" r="2" fill="#e74c3c"/>
+  
+  <!-- Shoulder straps -->
+  <rect x="80" y="80" width="15" height="150" fill="#2c3e50" rx="7"/>
+  <rect x="305" y="80" width="15" height="150" fill="#2c3e50" rx="7"/>
+  
+  <!-- Strap padding -->
+  <rect x="85" y="120" width="5" height="60" fill="#34495e" rx="2"/>
+  <rect x="310" y="120" width="5" height="60" fill="#34495e" rx="2"/>
+  
+  <!-- Chest strap -->
+  <rect x="95" y="130" width="210" height="8" fill="#2c3e50" rx="4"/>
+  <rect x="190" y="125" width="20" height="18" fill="#34495e" rx="3"/>
+  
+  <!-- Hydration tube -->
+  <path d="M112 135 Q150 125 200 140" stroke="#3498db" stroke-width="3" fill="none"/>
+  <circle cx="200" cy="140" r="4" fill="#e74c3c"/>
+  
+  <!-- Rain cover -->
+  <rect x="160" y="50" width="80" height="15" fill="#f39c12" rx="7"/>
+  <text x="200" y="61" font-family="Arial, sans-serif" font-size="10" 
+        text-anchor="middle" fill="#2c3e50">Rain Cover</text>
+  
+  <!-- Volume indicator -->
+  <rect x="180" y="240" width="40" height="15" fill="#2c3e50" rx="3"/>
+  <text x="200" y="251" font-family="Arial, sans-serif" font-size="10" font-weight="bold" 
+        text-anchor="middle" fill="#ffffff">40L</text>
+  
+  <!-- Hiking icons -->
+  <g opacity="0.7">
+    <circle cx="50" cy="80" r="15" fill="#8b4513"/>
+    <path d="M45 80 Q50 75 55 80 Q50 85 45 80" fill="#228b22"/>
+    <text x="50" y="105" font-family="Arial, sans-serif" font-size="8" 
+          text-anchor="middle" fill="#2c3e50">Mountain</text>
+    
+    <circle cx="350" cy="120" r="15" fill="#87ceeb"/>
+    <path d="M345 120 Q350 115 355 120 Q350 125 345 120" fill="#ffffff"/>
+    <text x="350" y="145" font-family="Arial, sans-serif" font-size="8" 
+          text-anchor="middle" fill="#2c3e50">Water</text>
+    
+    <circle cx="50" cy="220" r="15" fill="#f39c12"/>
+    <path d="M50 210 L48 225 L52 225 Z" fill="#2c3e50"/>
+    <text x="50" y="245" font-family="Arial, sans-serif" font-size="8" 
+          text-anchor="middle" fill="#2c3e50">Compass</text>
+  </g>
+  
+  <!-- Buckles -->
+  <rect x="160" y="200" width="15" height="8" fill="#7f8c8d" rx="2"/>
+  <rect x="225" y="200" width="15" height="8" fill="#7f8c8d" rx="2"/>
+  
+  <!-- Reflective strips -->
+  <rect x="130" y="180" width="140" height="2" fill="#f1c40f" opacity="0.8"/>
+  <rect x="130" y="220" width="140" height="2" fill="#f1c40f" opacity="0.8"/>
+  
+  <!-- Title -->
+  <text x="200" y="30" font-family="Arial, sans-serif" font-size="24" font-weight="bold" 
+        text-anchor="middle" fill="#2c3e50">Hiking Backpack 40L</text>
+  <text x="200" y="290" font-family="Arial, sans-serif" font-size="14" 
+        text-anchor="middle" fill="#7f8c8d">Hydration System • Rain Cover • Lightweight</text>
+</svg>

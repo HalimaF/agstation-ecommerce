@@ -1,0 +1,58 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#f8f9fa"/>
+  
+  <!-- Book cover -->
+  <rect x="100" y="50" width="200" height="260" fill="#2c3e50" rx="5"/>
+  <rect x="105" y="55" width="190" height="250" fill="#34495e" rx="3"/>
+  <rect x="110" y="60" width="180" height="240" fill="#3498db" rx="2"/>
+  
+  <!-- Python logo -->
+  <circle cx="200" cy="120" r="25" fill="#ffd43b"/>
+  <circle cx="190" cy="110" r="10" fill="#3776ab"/>
+  <circle cx="210" cy="130" r="10" fill="#3776ab"/>
+  <path d="M185 115 Q200 100 215 115 Q200 130 185 115" fill="#3776ab"/>
+  <path d="M185 125 Q200 110 215 125 Q200 140 185 125" fill="#ffd43b"/>
+  
+  <!-- Title -->
+  <text x="200" y="170" font-family="Arial, sans-serif" font-size="20" font-weight="bold" 
+        text-anchor="middle" fill="#ffffff">PYTHON</text>
+  <text x="200" y="190" font-family="Arial, sans-serif" font-size="18" font-weight="bold" 
+        text-anchor="middle" fill="#ffffff">PROGRAMMING</text>
+  <text x="200" y="210" font-family="Arial, sans-serif" font-size="14" 
+        text-anchor="middle" fill="#ecf0f1">Complete Guide</text>
+  
+  <!-- Code snippets -->
+  <g opacity="0.8">
+    <rect x="120" y="230" width="160" height="60" fill="#2c3e50" rx="3"/>
+    <text x="125" y="245" font-family="Courier, monospace" font-size="8" fill="#e74c3c">def hello_world():</text>
+    <text x="125" y="255" font-family="Courier, monospace" font-size="8" fill="#f39c12">    print("Hello, World!")</text>
+    <text x="125" y="265" font-family="Courier, monospace" font-size="8" fill="#27ae60">    return True</text>
+    <text x="125" y="275" font-family="Courier, monospace" font-size="8" fill="#3498db">for i in range(10):</text>
+    <text x="125" y="285" font-family="Courier, monospace" font-size="8" fill="#9b59b6">    hello_world()</text>
+  </g>
+  
+  <!-- Book spine -->
+  <rect x="95" y="50" width="10" height="260" fill="#2c3e50"/>
+  <rect x="96" y="55" width="8" height="250" fill="#34495e"/>
+  <text x="100" y="180" font-family="Arial, sans-serif" font-size="12" font-weight="bold" 
+        text-anchor="middle" fill="#ffffff" transform="rotate(-90 100 180)">PYTHON</text>
+  
+  <!-- Author -->
+  <text x="200" y="320" font-family="Arial, sans-serif" font-size="12" 
+        text-anchor="middle" fill="#7f8c8d">Expert Programming Guide</text>
+  
+  <!-- Decorative elements -->
+  <g opacity="0.6">
+    <circle cx="50" cy="100" r="8" fill="#3498db"/>
+    <circle cx="350" cy="120" r="6" fill="#e74c3c"/>
+    <circle cx="40" cy="200" r="5" fill="#27ae60"/>
+    <circle cx="360" cy="220" r="7" fill="#f39c12"/>
+    <circle cx="30" cy="250" r="4" fill="#9b59b6"/>
+    <circle cx="370" cy="180" r="5" fill="#1abc9c"/>
+  </g>
+  
+  <!-- Title -->
+  <text x="200" y="30" font-family="Arial, sans-serif" font-size="24" font-weight="bold" 
+        text-anchor="middle" fill="#2c3e50">Python Programming Book</text>
+</svg>

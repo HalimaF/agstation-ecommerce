@@ -1,0 +1,25 @@
+<svg width="500" height="500" xmlns="http://www.w3.org/2000/svg">
+  <rect width="500" height="500" fill="#f8f9fa"/>
+  <rect x="50" y="50" width="400" height="400" fill="#ffffff" stroke="#dee2e6" stroke-width="2" rx="20"/>
+  
+  <!-- Camera body -->
+  <rect x="180" y="180" width="140" height="100" fill="#2c3e50" rx="15"/>
+  <circle cx="250" cy="220" r="30" fill="#34495e"/>
+  <circle cx="250" cy="220" r="20" fill="#1a252f"/>
+  <circle cx="250" cy="220" r="8" fill="#3498db"/>
+  
+  <!-- Antenna -->
+  <rect x="245" y="160" width="10" height="20" fill="#2c3e50"/>
+  <circle cx="250" cy="155" r="4" fill="#e74c3c"/>
+  
+  <!-- Stand -->
+  <rect x="235" y="280" width="30" height="40" fill="#34495e" rx="5"/>
+  
+  <!-- WiFi signal -->
+  <path d="M 150 150 Q 180 130 210 150" stroke="#27ae60" stroke-width="3" fill="none"/>
+  <path d="M 155 160 Q 175 145 195 160" stroke="#27ae60" stroke-width="3" fill="none"/>
+  <path d="M 160 170 Q 172 162 184 170" stroke="#27ae60" stroke-width="3" fill="none"/>
+  
+  <text x="250" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2c3e50">Security Camera</text>
+  <text x="250" y="385" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#7f8c8d">1080p HD · Night Vision</text>
+</svg>

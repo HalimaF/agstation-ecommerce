@@ -1,0 +1,42 @@
+<svg width="500" height="500" xmlns="http://www.w3.org/2000/svg">
+  <rect width="500" height="500" fill="#f8f9fa"/>
+  <rect x="50" y="50" width="400" height="400" fill="#ffffff" stroke="#dee2e6" stroke-width="2" rx="20"/>
+  
+  <!-- Charging pad base -->
+  <circle cx="250" cy="250" r="80" fill="#2c3e50"/>
+  <circle cx="250" cy="250" r="70" fill="#34495e"/>
+  <circle cx="250" cy="250" r="60" fill="#2c3e50"/>
+  
+  <!-- Wireless charging coils -->
+  <circle cx="250" cy="250" r="50" fill="none" stroke="#3498db" stroke-width="2"/>
+  <circle cx="250" cy="250" r="40" fill="none" stroke="#3498db" stroke-width="2"/>
+  <circle cx="250" cy="250" r="30" fill="none" stroke="#3498db" stroke-width="2"/>
+  
+  <!-- Center charging area -->
+  <circle cx="250" cy="250" r="20" fill="#3498db" opacity="0.3"/>
+  
+  <!-- Phone outline on pad -->
+  <rect x="220" y="220" width="60" height="100" fill="#1a252f" rx="15" opacity="0.8"/>
+  <rect x="225" y="225" width="50" height="90" fill="#000000" rx="10"/>
+  <rect x="230" y="230" width="40" height="80" fill="#3498db" opacity="0.2"/>
+  
+  <!-- Charging indicator LED -->
+  <circle cx="250" cy="180" r="4" fill="#27ae60"/>
+  
+  <!-- Wireless waves -->
+  <path d="M 200 200 Q 220 180 240 200" stroke="#3498db" stroke-width="3" fill="none" opacity="0.6"/>
+  <path d="M 260 200 Q 280 180 300 200" stroke="#3498db" stroke-width="3" fill="none" opacity="0.6"/>
+  <path d="M 190 210 Q 220 175 250 210" stroke="#3498db" stroke-width="2" fill="none" opacity="0.4"/>
+  <path d="M 250 210 Q 280 175 310 210" stroke="#3498db" stroke-width="2" fill="none" opacity="0.4"/>
+  
+  <!-- Power cable -->
+  <rect x="245" y="330" width="10" height="40" fill="#2c3e50" rx="5"/>
+  <rect x="240" y="370" width="20" height="15" fill="#34495e" rx="3"/>
+  
+  <!-- Qi logo -->
+  <circle cx="180" cy="180" r="15" fill="#f39c12"/>
+  <text x="180" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffffff">Qi</text>
+  
+  <text x="250" y="410" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2c3e50">Wireless Charging Pad</text>
+  <text x="250" y="435" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#7f8c8d">Fast Charge · Qi Compatible</text>
+</svg>

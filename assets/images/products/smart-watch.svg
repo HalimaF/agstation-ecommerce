@@ -1,0 +1,104 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#f0f8ff"/>
+  
+  <!-- Watch face -->
+  <circle cx="200" cy="150" r="80" fill="#2c3e50"/>
+  <circle cx="200" cy="150" r="75" fill="#34495e"/>
+  <circle cx="200" cy="150" r="70" fill="#1a1a1a"/>
+  
+  <!-- Watch screen -->
+  <circle cx="200" cy="150" r="65" fill="#ffffff"/>
+  <circle cx="200" cy="150" r="60" fill="#ecf0f1"/>
+  
+  <!-- Digital display -->
+  <rect x="160" y="130" width="80" height="40" fill="#2c3e50" rx="5"/>
+  <text x="200" y="145" font-family="Arial, sans-serif" font-size="16" font-weight="bold" 
+        text-anchor="middle" fill="#00ff00">12:34</text>
+  <text x="200" y="160" font-family="Arial, sans-serif" font-size="10" 
+        text-anchor="middle" fill="#00ff00">5,432 steps</text>
+  
+  <!-- Heart rate indicator -->
+  <g opacity="0.8">
+    <circle cx="170" cy="120" r="8" fill="#e74c3c"/>
+    <path d="M165 120 Q170 115 175 120 Q170 125 165 120" fill="#ffffff"/>
+    <text x="185" y="125" font-family="Arial, sans-serif" font-size="10" 
+          text-anchor="middle" fill="#2c3e50">72 BPM</text>
+  </g>
+  
+  <!-- GPS indicator -->
+  <g opacity="0.8">
+    <circle cx="230" cy="120" r="8" fill="#3498db"/>
+    <path d="M230 115 L228 122 L232 122 Z" fill="#ffffff"/>
+    <text x="215" y="125" font-family="Arial, sans-serif" font-size="10" 
+          text-anchor="middle" fill="#2c3e50">GPS</text>
+  </g>
+  
+  <!-- Activity rings -->
+  <g opacity="0.7">
+    <circle cx="180" cy="180" r="15" fill="none" stroke="#e74c3c" stroke-width="3"/>
+    <circle cx="180" cy="180" r="15" fill="none" stroke="#27ae60" stroke-width="3" 
+            stroke-dasharray="60,10" transform="rotate(90 180 180)"/>
+    
+    <circle cx="220" cy="180" r="15" fill="none" stroke="#3498db" stroke-width="3"/>
+    <circle cx="220" cy="180" r="15" fill="none" stroke="#f39c12" stroke-width="3" 
+            stroke-dasharray="40,30" transform="rotate(45 220 180)"/>
+  </g>
+  
+  <!-- Watch band -->
+  <rect x="120" y="140" width="60" height="20" fill="#2c3e50" rx="10"/>
+  <rect x="220" y="140" width="60" height="20" fill="#2c3e50" rx="10"/>
+  
+  <!-- Band holes -->
+  <g>
+    <circle cx="130" cy="150" r="2" fill="#34495e"/>
+    <circle cx="140" cy="150" r="2" fill="#34495e"/>
+    <circle cx="150" cy="150" r="2" fill="#34495e"/>
+    <circle cx="160" cy="150" r="2" fill="#34495e"/>
+    <circle cx="170" cy="150" r="2" fill="#34495e"/>
+    
+    <circle cx="230" cy="150" r="2" fill="#34495e"/>
+    <circle cx="240" cy="150" r="2" fill="#34495e"/>
+    <circle cx="250" cy="150" r="2" fill="#34495e"/>
+    <circle cx="260" cy="150" r="2" fill="#34495e"/>
+    <circle cx="270" cy="150" r="2" fill="#34495e"/>
+  </g>
+  
+  <!-- Side buttons -->
+  <rect x="135" y="135" width="5" height="15" fill="#7f8c8d" rx="2"/>
+  <rect x="135" y="155" width="5" height="10" fill="#7f8c8d" rx="2"/>
+  
+  <!-- Digital crown -->
+  <circle cx="270" cy="135" r="8" fill="#7f8c8d"/>
+  <circle cx="270" cy="135" r="6" fill="#95a5a6"/>
+  <circle cx="270" cy="135" r="4" fill="#bdc3c7"/>
+  
+  <!-- Fitness icons -->
+  <g opacity="0.6">
+    <circle cx="80" cy="100" r="15" fill="#e74c3c"/>
+    <path d="M75 100 Q80 95 85 100 Q80 105 75 100" fill="#ffffff"/>
+    <text x="80" y="125" font-family="Arial, sans-serif" font-size="8" 
+          text-anchor="middle" fill="#2c3e50">Heart Rate</text>
+    
+    <circle cx="320" cy="100" r="15" fill="#27ae60"/>
+    <path d="M315 95 L320 105 L325 95 L320 100 Z" fill="#ffffff"/>
+    <text x="320" y="125" font-family="Arial, sans-serif" font-size="8" 
+          text-anchor="middle" fill="#2c3e50">Steps</text>
+    
+    <circle cx="80" cy="200" r="15" fill="#3498db"/>
+    <path d="M80 190 L78 205 L82 205 Z" fill="#ffffff"/>
+    <text x="80" y="225" font-family="Arial, sans-serif" font-size="8" 
+          text-anchor="middle" fill="#2c3e50">GPS</text>
+    
+    <circle cx="320" cy="200" r="15" fill="#9b59b6"/>
+    <path d="M315 200 Q320 195 325 200 Q320 205 315 200" fill="#ffffff"/>
+    <text x="320" y="225" font-family="Arial, sans-serif" font-size="8" 
+          text-anchor="middle" fill="#2c3e50">Sleep</text>
+  </g>
+  
+  <!-- Title -->
+  <text x="200" y="30" font-family="Arial, sans-serif" font-size="24" font-weight="bold" 
+        text-anchor="middle" fill="#2c3e50">Smart Watch Fitness Tracker</text>
+  <text x="200" y="280" font-family="Arial, sans-serif" font-size="14" 
+        text-anchor="middle" fill="#7f8c8d">Heart Rate • GPS • Sleep Tracking</text>
+</svg>

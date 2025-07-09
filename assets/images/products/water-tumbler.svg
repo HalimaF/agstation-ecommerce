@@ -1,0 +1,44 @@
+<svg width="500" height="500" xmlns="http://www.w3.org/2000/svg">
+  <rect width="500" height="500" fill="#f8f9fa"/>
+  <rect x="50" y="50" width="400" height="400" fill="#ffffff" stroke="#dee2e6" stroke-width="2" rx="20"/>
+  
+  <!-- Tumbler body -->
+  <path d="M 200 180 L 200 320 Q 200 340 220 340 L 280 340 Q 300 340 300 320 L 300 180 Q 300 160 280 160 L 220 160 Q 200 160 200 180" fill="#7f8c8d"/>
+  <path d="M 205 185 L 205 315 Q 205 330 215 330 L 285 330 Q 295 330 295 315 L 295 185 Q 295 170 285 170 L 215 170 Q 205 170 205 185" fill="#95a5a6"/>
+  
+  <!-- Lid -->
+  <ellipse cx="250" cy="160" rx="50" ry="8" fill="#2c3e50"/>
+  <ellipse cx="250" cy="155" rx="50" ry="8" fill="#34495e"/>
+  
+  <!-- Straw hole -->
+  <circle cx="250" cy="155" r="4" fill="#1a252f"/>
+  
+  <!-- Straw -->
+  <rect x="248" y="120" width="4" height="40" fill="#e74c3c"/>
+  <circle cx="250" cy="120" r="6" fill="#c0392b"/>
+  
+  <!-- Handle -->
+  <path d="M 300 200 Q 330 220 300 240" stroke="#34495e" stroke-width="8" fill="none"/>
+  <path d="M 305 205 Q 325 220 305 235" stroke="#2c3e50" stroke-width="4" fill="none"/>
+  
+  <!-- Insulation bands -->
+  <rect x="200" y="200" width="100" height="4" fill="#2c3e50"/>
+  <rect x="200" y="260" width="100" height="4" fill="#2c3e50"/>
+  
+  <!-- Temperature gauge -->
+  <rect x="170" y="220" width="20" height="40" fill="#000000" rx="3"/>
+  <rect x="175" y="225" width="10" height="30" fill="#e74c3c"/>
+  <text x="160" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#e74c3c">HOT</text>
+  <text x="160" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#3498db">COLD</text>
+  
+  <!-- Brand logo area -->
+  <circle cx="250" cy="250" r="15" fill="#34495e"/>
+  <text x="250" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffffff">AG</text>
+  
+  <!-- Ice cubes (for cold effect) -->
+  <rect x="320" y="180" width="15" height="15" fill="#ecf0f1" rx="2" opacity="0.8"/>
+  <rect x="330" y="200" width="12" height="12" fill="#ecf0f1" rx="2" opacity="0.8"/>
+  
+  <text x="250" y="380" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2c3e50">Stainless Steel Tumbler</text>
+  <text x="250" y="405" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#7f8c8d">24h Cold · 12h Hot · Insulated</text>
+</svg>
