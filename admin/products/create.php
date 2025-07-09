@@ -23,15 +23,32 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Handle file upload
     $imageName = null;
     if (!empty($_FILES['image']['name'])) {
-        $uploadDir = '../../uploads/product_images/';
+        // Use absolute path that works in Docker container
+        $uploadDir = $_SERVER['DOCUMENT_ROOT'] . '/uploads/product_images/';
+        
+        // Create directory if it doesn't exist
         if (!is_dir($uploadDir)) {
-            mkdir($uploadDir, 0777, true);
+            if (!mkdir($uploadDir, 0777, true)) {
+                $error = "Failed to create upload directory.";
+            }
         }
-        $imageName = uniqid('prod_') . '_' . basename($_FILES['image']['name']);
-        $imageTmpName = $_FILES['image']['tmp_name'];
-        $imagePath = $uploadDir . $imageName;
-        if (!move_uploaded_file($imageTmpName, $imagePath)) {
-            $error = "Failed to upload the product image.";
+        
+        // Check if directory is writable
+        if (!is_writable($uploadDir)) {
+            $error = "Upload directory is not writable.";
+        }
+        
+        if (!isset($error)) {
+            $imageName = uniqid('prod_') . '_' . basename($_FILES['image']['name']);
+            $imageTmpName = $_FILES['image']['tmp_name'];
+            $imagePath = $uploadDir . $imageName;
+            
+            // Check for upload errors
+            if ($_FILES['image']['error'] !== UPLOAD_ERR_OK) {
+                $error = "Upload error: " . $_FILES['image']['error'];
+            } elseif (!move_uploaded_file($imageTmpName, $imagePath)) {
+                $error = "Failed to upload the product image. Check directory permissions.";
+            }
         }
     }
 
