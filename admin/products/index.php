@@ -1,6 +1,7 @@
 <?php 
 require_once '../../config/db.php';
 require_once '../../includes/session.php';
+require_once '../../includes/image-helper.php';
 require_once '../../includes/header.php';
 checkRole(['admin', 'Admin', 1]);
 
@@ -51,7 +52,7 @@ try {
                 <td><?= $row['distributor_name'] ? htmlspecialchars($row['distributor_name']) : '<span class="text-muted">None</span>' ?></td>
                 <td>
                     <?php if (!empty($row['image_url'])): ?>
-                        <img src="/uploads/product_images/<?= htmlspecialchars($row['image_url']) ?>" width="60" alt="Product Image" style="max-height: 60px; object-fit: cover;">
+                        <?= getProductImageTag($row['image_url'], 'Product Image', '', 'width: 60px; max-height: 60px; object-fit: cover;') ?>
                     <?php endif; ?>
                 </td>
                 <td><?= htmlspecialchars($row['status']) ?></td>

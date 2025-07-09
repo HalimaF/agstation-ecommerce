@@ -2,6 +2,7 @@
 require_once __DIR__ . '/../config/db.php';
 require_once __DIR__ . '/../includes/functions.php';
 require_once __DIR__ . '/../includes/session.php';
+require_once __DIR__ . '/../includes/image-helper.php';
 require_once __DIR__ . '/../includes/header.php';
 
 try {
@@ -29,7 +30,7 @@ try {
             <div class="col-md-3">
                 <div class="card mb-4 shadow-sm">
                     <a href="product_detail.php?asin=<?= htmlspecialchars($row['asin']) ?>">
-                        <img src="/uploads/product_images/<?= htmlspecialchars($row['image_url']) ?>" class="card-img-top" alt="<?= htmlspecialchars($row['name']) ?>" style="height: 220px; object-fit: contain; background: #fff; padding: 12px;">
+                        <?= getProductImageTag($row['image_url'], $row['name'], 'card-img-top', 'height: 220px; object-fit: contain; background: #fff; padding: 12px;') ?>
                     </a>
                     <div class="card-body text-center">
                         <h5 class="card-title"><?= htmlspecialchars($row['name']) ?></h5>

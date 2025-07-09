@@ -347,6 +347,11 @@ INSERT INTO Products (asin, name, category, cost_price, retail_price, descriptio
 ('B0DB9Z88RG', 'Vivilux Smart Bulb', 'Electronics', 15.50, 29.99, 'Smart WiFi enabled LED bulb with app control', 'Active', 1, 1),
 ('B075H3MLR5', 'G.E.Design Agricultural Tool', 'Tools', 35.00, 65.99, 'Professional grade agricultural hand tool', 'Active', 2, 1);
 
+-- Update products with local image paths
+UPDATE Products SET image_url = 'vivilux-led-strip.jpg' WHERE asin = 'B07S28X9KZ';
+UPDATE Products SET image_url = 'vivilux-smart-bulb.jpg' WHERE asin = 'B0DB9Z88RG';
+UPDATE Products SET image_url = 'ge-design-tool.jpg' WHERE asin = 'B075H3MLR5';
+
 -- Insert sample customer
 INSERT INTO WebsiteCustomers (name, email, password_hash, phone, shipping_address, billing_address) VALUES
 ('John Customer', 'customer@example.com', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', '555-0301', 

@@ -9,7 +9,7 @@ RewriteRule ^uploads/(.*)$ /uploads/$1 [L]
 RewriteCond %{REQUEST_FILENAME} -f
 RewriteRule ^(.+\.php)$ $1 [L]
 
-# Handle static assets
+# Handle static assets (CSS, JS, Images)
 RewriteCond %{REQUEST_FILENAME} -f
 RewriteRule ^(assets/.*)$ $1 [L]
 

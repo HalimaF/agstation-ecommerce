@@ -1,6 +1,7 @@
 <?php 
 require_once '../../config/db.php';
 require_once '../../includes/session.php';
+require_once '../../includes/image-helper.php';
 
 checkRole(['admin', 'Admin', 1]);
 
@@ -20,9 +21,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $description = trim($_POST['description']);
     $status = trim($_POST['status']);
 
-    // Handle file upload
+    // Handle image selection (local image or file upload)
     $imageName = null;
-    if (!empty($_FILES['image']['name'])) {
+    
+    // Check if local image was selected
+    if (!empty($_POST['local_image']) && $_POST['local_image'] !== 'upload') {
+        $imageName = $_POST['local_image'];
+    } elseif (!empty($_FILES['image']['name'])) {
+        // Handle file upload
         $uploadDir = __DIR__ . '/../../uploads/product_images/';
         if (!is_dir($uploadDir)) {
             mkdir($uploadDir, 0777, true);
@@ -128,7 +134,26 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
         <div class="mb-3">
             <label class="form-label">Product Image</label>
-            <input type="file" name="image" class="form-control">
+            <div class="row">
+                <div class="col-md-6">
+                    <label class="form-label small">Select from Available Images:</label>
+                    <select name="local_image" class="form-select" id="imageSelect" onchange="toggleImageUpload()">
+                        <option value="">Choose local image...</option>
+                        <?php
+                        $availableImages = getAvailableProductImages();
+                        foreach ($availableImages as $image):
+                        ?>
+                            <option value="<?= htmlspecialchars($image) ?>"><?= htmlspecialchars($image) ?></option>
+                        <?php endforeach; ?>
+                        <option value="upload">Upload new image...</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label small">Or Upload New Image:</label>
+                    <input type="file" name="image" class="form-control" id="imageUpload" accept="image/*">
+                    <small class="text-muted">JPEG, PNG, GIF, WebP - Max 5MB</small>
+                </div>
+            </div>
         </div>
         <div class="mb-3">
             <label class="form-label">Status</label>
@@ -141,4 +166,29 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <a href="index.php" class="btn btn-secondary">Cancel</a>
     </form>
 </div>
+
+<script>
+function toggleImageUpload() {
+    const select = document.getElementById('imageSelect');
+    const upload = document.getElementById('imageUpload');
+    
+    if (select.value === 'upload') {
+        upload.style.display = 'block';
+        upload.required = true;
+    } else if (select.value !== '') {
+        upload.style.display = 'none';
+        upload.required = false;
+        upload.value = '';
+    } else {
+        upload.style.display = 'block';
+        upload.required = false;
+    }
+}
+
+// Initialize on page load
+document.addEventListener('DOMContentLoaded', function() {
+    toggleImageUpload();
+});
+</script>
+
 <?php include '../../includes/footer.php'; ?>
